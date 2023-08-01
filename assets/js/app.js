@@ -1,5 +1,4 @@
 const notesContainer = document.querySelector(".notes-container");
-
 const createBtn = document.querySelector(".btn");
 
 let notes = document.querySelectorAll(".input-box");
@@ -25,7 +24,6 @@ createBtn.addEventListener("click", ()=> {
 })
 
 // Delete the box from the delete icon
-
 notesContainer.addEventListener("click", function(e) {
     if(e.target.tagName === "IMG") {
         e.target.parentElement.remove();
@@ -47,6 +45,5 @@ document.addEventListener("keydown", event => {
     if(event.key === "Enter") {
         document.execCommand("insertLineBreak");
         event.preventDefault();
-
     }
 })
